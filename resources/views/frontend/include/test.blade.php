@@ -1,6 +1,7 @@
 <section class="testimonial-section padding-top padding-bottom">
     <div class="container">
         <div class="row gy-4">
+            
             <div class="col-lg-5">
                 <div class="testimonial__img__slider">
                     <div class="single-slide">
@@ -15,6 +16,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-7">
                 <div class="testimonial__content__slider">
                     <div class="single-slide">
@@ -35,6 +37,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
