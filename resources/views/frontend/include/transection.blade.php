@@ -105,6 +105,7 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                
                                 <tr>
                                     <td data-label="User Name">
                                         <div class="user d-flex flex-wrap align-items-center">
@@ -118,6 +119,7 @@
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
                                     <td data-label="Date"><span class="date">25 Apr 2021</span></td>
                                 </tr>
+
                                 <tr>
                                     <td data-label="User Name">
                                         <div class="user d-flex flex-wrap align-items-center">
@@ -131,6 +133,7 @@
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
                                     <td data-label="Date"><span class="date">25 Jan 2021</span></td>
                                 </tr>
+
                                 <tr>
                                     <td data-label="User Name">
                                         <div class="user d-flex flex-wrap align-items-center">
@@ -144,6 +147,7 @@
                                     <td data-label="Wallet"><span class="wallet">block.io</span></td>
                                     <td data-label="Date"><span class="date">25 May 2021</span></td>
                                 </tr>
+
                                 <tr>
                                     <td data-label="User Name">
                                         <div class="user d-flex flex-wrap align-items-center">
@@ -157,6 +161,7 @@
                                     <td data-label="Wallet"><span class="wallet">Bank Wire</span></td>
                                     <td data-label="Date"><span class="date">25 Feb 2021</span></td>
                                 </tr>
+
                                 <tr>
                                     <td data-label="User Name">
                                         <div class="user d-flex flex-wrap align-items-center">
@@ -170,6 +175,7 @@
                                     <td data-label="Wallet"><span class="wallet">Paypal</span></td>
                                     <td data-label="Date"><span class="date">25 May 2021</span></td>
                                 </tr>
+
                             </tbody>
                         </table>
                     </div>
