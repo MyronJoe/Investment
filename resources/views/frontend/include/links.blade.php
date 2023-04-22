@@ -25,4 +25,14 @@
 
     <title>Joe - Hyip Investment Business</title>
 
+    <style>
+        .form-control{
+            background: #fff !important;
+            border: none !important;
+            border-radius: 4px !important;
+            color: black !important;
+            padding: 15px !important;
+        }
+    </style>
+
 </head>

@@ -64,7 +64,7 @@
                     </div>
 
                     @else
-                        <a href="{{url('login')}}" class="cmn--btn">Login</a>
+                        <a href="{{url('register')}}" class="cmn--btn">Register</a>
                     @endauth
                     @endif
 
