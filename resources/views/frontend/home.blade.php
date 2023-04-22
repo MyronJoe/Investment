@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
-    <title>Digihyip - Hyip Investment Business HTML template</title>
+    <title>Joe - Hyip Investment Business</title>
 
 </head>
 
