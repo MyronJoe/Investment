@@ -30,3 +30,5 @@ Route::middleware([
 
 
 Route::get('/register', [HomeController::class, 'Register'])->name('register');
+
+Route::get('/adduser', [HomeController::class, 'AddUser'])->name('addUser');

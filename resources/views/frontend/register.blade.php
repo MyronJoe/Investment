@@ -20,30 +20,38 @@
             <div class="col-lg-6 col-xl-5">
                 <div class="account__form__wrapper">
                     <h3 class="title">Create Your Account</h3>
-                    <form class="form account__form" autocomplete="off">
+                    <form class="form account__form" autocomplete="off" action="{{route('addUser')}}">
 
                         <div class="form-group">
-                            <input type="text" class="form-control form--control" placeholder="Username">
-                            
+                            <input type="text" name="name" class="form-control form--control" placeholder="Username" value="{{ old('name') }}">
+                            @error('name')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
 
                         <div class="form-group">
-                            <input type="email" class="form-control form--control" placeholder="Email">
-                            
+                            <input type="email" name="email" class="form-control form--control" placeholder="Email" value="{{ old('email') }}">
+                            @error('email')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
 
                         <div class="form-group">
-                            <input type="password" class="form-control form--control" placeholder="Password">
-                            
+                            <input type="password" name="password" class="form-control form--control" placeholder="Password" value="{{ old('password') }}">
+                            @error('password')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
 
                         <div class="form-group">
-                            <input type="password" class="form-control form--control" placeholder="Re-Password">
-                            
+                            <input type="password" name="confirm_password" class="form-control form--control" placeholder="Re-Password" value="{{ old('confirm_password') }}">
+                            @error('confirm_password')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
 
 
-                        <button class="btn cmn--btn mt-4">Register</button>
+                        <button class="btn cmn--btn mt-4" name="adduser">Register</button>
                     </form>
 
                     <p class="mt-4">Already you have an account in here? <a class="ms-2 text--base" href="sign-in.html">Sign In</a></p>

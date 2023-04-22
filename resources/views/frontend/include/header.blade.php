@@ -38,9 +38,27 @@
 
                     <li class="p-0 d-lg-none mt-3 mt-lg-0">
                         <div class="button__wrapper">
-                            <!-- <a href="sign-up.html" class="cmn--btn">Register</a> -->
+                                @if (Route::has('login'))
 
-                            <!-- <a href="sign-in.html" class="cmn--btn">Login</a> -->
+                                @auth
+
+                                <div class="right__area d-flex flex-wrap align-items-center mt-3 mt-md-0">
+                                    <select name="language" class="nice-select custom--scrollbar">
+                                        <option>Myron Joe</option>
+                                        <option>Dashboard</option>
+                                        <option>Profile</option>
+                                        <option>Logout</option>
+                                    </select>
+                                    <a href="dashboard.html" class="user__thumb ms-3 me-3 me-lg-0">
+                                        <img src="assets/images/dashboard/user.png" alt="dashboard">
+                                    </a>
+                                </div>
+
+                                @else
+                                <a href="{{url('register')}}" class="cmn--btn">Register</a>
+                                @endauth
+                                @endif
+
                         </div>
                     </li>
                 </ul> <!-- Menu End -->
@@ -64,7 +82,7 @@
                     </div>
 
                     @else
-                        <a href="{{url('register')}}" class="cmn--btn">Register</a>
+                    <a href="{{url('register')}}" class="cmn--btn">Register</a>
                     @endauth
                     @endif
 
