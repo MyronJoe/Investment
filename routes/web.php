@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LogoutController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,6 +29,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
 
 Route::get('/register', [HomeController::class, 'Register'])->name('register');
 

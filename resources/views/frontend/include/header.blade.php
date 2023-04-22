@@ -32,61 +32,35 @@
                         <a href="contact.html">Contact</a>
                     </li>
 
+                    @if (Route::has('login'))
+
+                    @auth
+
+                    <li>
+                        <a href="plan.html">Dashboard</a>
+                    </li>
+
+                    @endauth
+                    @endif
+
+
                     <li class="d-none d-lg-block">
                         <a href="#0" class="search--btn"><i class="fas fa-search"></i></a>
                     </li>
 
                     <li class="p-0 d-lg-none mt-3 mt-lg-0">
                         <div class="button__wrapper">
-                                @if (Route::has('login'))
+                            @if (Route::has('login'))
 
-                                @auth
-
-                                <div class="right__area d-flex flex-wrap align-items-center mt-3 mt-md-0">
-                                    <select name="language" class="nice-select custom--scrollbar">
-                                        <option>Myron Joe</option>
-                                        <option>Dashboard</option>
-                                        <option>Profile</option>
-                                        <option>Logout</option>
-                                    </select>
-                                    <a href="dashboard.html" class="user__thumb ms-3 me-3 me-lg-0">
-                                        <img src="assets/images/dashboard/user.png" alt="dashboard">
-                                    </a>
-                                </div>
-
-                                @else
-                                <a href="{{url('register')}}" class="cmn--btn">Register</a>
-                                @endauth
-                                @endif
-
+                            @auth
+                            <a href="{{url('logout')}}" class="cmn--btn">Logout</a>
+                            @else
+                            <a href="{{url('register')}}" class="cmn--btn">Register</a>
+                            @endauth
+                            @endif
                         </div>
                     </li>
                 </ul> <!-- Menu End -->
-
-                <div class="button__wrapper d-none d-lg-block">
-
-                    @if (Route::has('login'))
-
-                    @auth
-
-                    <div class="right__area d-flex flex-wrap align-items-center mt-3 mt-md-0">
-                        <select name="language" class="nice-select custom--scrollbar">
-                            <option>Myron Joe</option>
-                            <option>Dashboard</option>
-                            <option>Profile</option>
-                            <option>Logout</option>
-                        </select>
-                        <a href="dashboard.html" class="user__thumb ms-3 me-3 me-lg-0">
-                            <img src="assets/images/dashboard/user.png" alt="dashboard">
-                        </a>
-                    </div>
-
-                    @else
-                    <a href="{{url('register')}}" class="cmn--btn">Register</a>
-                    @endauth
-                    @endif
-
-                </div>
 
 
                 <div class="header-trigger-wrapper d-flex d-lg-none align-items-center">
@@ -96,6 +70,19 @@
                         <span></span>
                     </div>
                 </div> <!-- Trigger End-->
+
+                <div class="button__wrapper d-none d-lg-block">
+
+                    @if (Route::has('login'))
+
+                    @auth
+                    <a href="{{url('logout')}}" class="cmn--btn">Logout</a>
+                    @else
+                    <a href="{{url('register')}}" class="cmn--btn">Register</a>
+                    @endauth
+                    @endif
+
+                </div>
             </div>
         </div>
     </div>
