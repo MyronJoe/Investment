@@ -1,5 +1,6 @@
 <section class="blog-section">
     <div class="container">
+
         <div class="row justify-content-center">
             <div class="col-lg-7 col-md-10">
                 <div class="section__header max-p text-center">
@@ -8,6 +9,7 @@
                 </div>
             </div>
         </div>
+
         <div class="row justify-content-center g-4">
             <div class="col-lg-4 col-md-6 col-sm-10">
                 <div class="post__item">
@@ -29,6 +31,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-sm-10">
                 <div class="post__item">
                     <div class="post__item-thumb">
@@ -49,6 +52,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-sm-10">
                 <div class="post__item">
                     <div class="post__item-thumb">
@@ -69,6 +73,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </section>
