@@ -29,8 +29,12 @@ Route::middleware([
     })->name('dashboard');
 });
 
+
+
+Route::get('/home', [HomeController::class, 'Home'])->name('home');
+
 Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
 
 Route::get('/register', [HomeController::class, 'Register'])->name('register');
 
-Route::get('/adduser', [HomeController::class, 'AddUser'])->name('addUser');
+Route::post('/adduser', [HomeController::class, 'AddUser'])->name('addUser');

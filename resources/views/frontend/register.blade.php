@@ -20,8 +20,8 @@
             <div class="col-lg-6 col-xl-5">
                 <div class="account__form__wrapper">
                     <h3 class="title">Create Your Account</h3>
-                    <form class="form account__form" autocomplete="off" action="{{route('addUser')}}">
-
+                    <form class="form account__form" autocomplete="off" action="{{route('addUser')}}" method="POST">
+                        @csrf
                         <div class="form-group">
                             <input type="text" name="name" class="form-control form--control" placeholder="Username" value="{{ old('name') }}">
                             @error('name')
