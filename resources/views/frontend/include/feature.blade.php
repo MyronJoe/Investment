@@ -53,6 +53,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="single-slide">
                 <div class="feature__item">
                     <div class="feature__item-icon">
@@ -64,6 +65,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </section>
