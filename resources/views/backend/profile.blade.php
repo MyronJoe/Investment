@@ -40,8 +40,8 @@
                                                     <div class="profile_img"><img width="180" class="rounded-circle" src="backend/images/layout_img/user_img.jpg" alt="#" /></div>
                                                     <div class="profile_contant">
                                                         <div class="contact_inner">
-                                                            <h3>John Smith</h3>
-                                                            <p><strong><i class="fa fa-envelope-o"></i>  </strong>Frontend Developer</p>
+                                                            <h3>{{ Auth::user()->name }}</h3>
+                                                            <p><strong><i class="fa fa-envelope-o"></i> : </strong>{{ Auth::user()->email }}</p>
                                                             <ul class="list-unstyled">
                                                                 
                                                                 <li><i class="fa fa-phone"></i> : 987 654 3210</li>
