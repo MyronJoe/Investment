@@ -64,4 +64,10 @@ class HomeController extends Controller
             return redirect()->back();
         }
     }
+
+    //user dashboard
+    public function UserDashboard(){
+
+        return view('frontend.dashboard');
+    }
 }

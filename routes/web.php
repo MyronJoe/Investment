@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LogoutController;
 use Illuminate\Support\Facades\Route;
@@ -24,17 +25,24 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+
+    Route::get('/home', [HomeController::class, 'Home'])->name('home');
+
+    Route::get('/dashboard', [HomeController::class, 'UserDashboard'])->name('user_dashboard');
+
+
 });
 
 
 
-Route::get('/home', [HomeController::class, 'Home'])->name('home');
+
+
+Route::get('/profile', [AdminController::class, 'Profile'])->name('admin_profile');
+
 
 Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
 
 Route::get('/register', [HomeController::class, 'Register'])->name('register');
 
 Route::post('/adduser', [HomeController::class, 'AddUser'])->name('addUser');
+

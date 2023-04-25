@@ -16,10 +16,10 @@
     <div class="header-bottom">
         <div class="container">
             <div class="header-bottom-area">
-                <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="logo"></a></div>
+                <div class="logo"><a href="/"><img src="assets/images/logo.png" alt="logo"></a></div>
                 <ul class="menu">
                     <li>
-                        <a href="#0">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
                         <a href="about.html">About</a>
@@ -37,7 +37,7 @@
                     @auth
 
                     <li>
-                        <a href="plan.html">Dashboard</a>
+                        <a href="{{route('user_dashboard')}}">Dashboard</a>
                     </li>
 
                     @endauth
