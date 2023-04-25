@@ -99,7 +99,7 @@
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                    <th>#</th>
+                                                    <th>S|N</th>
                                                     <th>Firstname</th>
                                                     <th>Lastname</th>
                                                     <th>Age</th>

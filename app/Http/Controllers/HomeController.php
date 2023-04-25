@@ -58,6 +58,8 @@ class HomeController extends Controller
             $data->email = $request->email;
             $data->password = Hash::make($request->password);
 
+            // auth()->login($data);
+
             $data->save();
 
             // Alert::success('Admin Created Successfully');
