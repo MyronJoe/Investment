@@ -17,7 +17,7 @@
       <!-- bootstrap css -->
       <link rel="stylesheet" href="backend/css/bootstrap.min.css" />
       <!-- site css -->
-      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="backend/style.css" />
       <!-- responsive css -->
       <link rel="stylesheet" href="backend/css/responsive.css" />
       <!-- color css -->
