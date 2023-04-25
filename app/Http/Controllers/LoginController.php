@@ -38,6 +38,13 @@ class LoginController extends Controller
 
         Auth::login($user);
 
+        $userType = Auth::user()->user_type;
+
+        if ($userType === '2ru') {
+
+            return view('backend.home');
+        }
+
         return $this->authenticated($request, $user);
     }
 

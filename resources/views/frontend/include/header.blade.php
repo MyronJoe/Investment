@@ -76,9 +76,9 @@
                     @if (Route::has('login'))
 
                     @auth
-                    <a href="{{url('logout')}}" class="cmn--btn">Logout</a>
+                    <a href="{{route('logout')}}" class="cmn--btn">Logout</a>
                     @else
-                    <a href="{{url('register')}}" class="cmn--btn">Register</a>
+                    <a href="{{route('show')}}" class="cmn--btn">Login</a>
                     @endauth
                     @endif
 
