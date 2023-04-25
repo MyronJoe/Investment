@@ -41,10 +41,11 @@ Route::get('/register', [RegisterController::class, 'Register'])->name('register
 
 Route::post('/adduser', [RegisterController::class, 'AddUser'])->name('addUser');
 
-//Login user route
-Route::get('/login', [RegisterController::class, 'Register'])->name('register');
 
-Route::post('/adduser', [RegisterController::class, 'AddUser'])->name('addUser');
+//Login user route
+Route::get('/login', [RegisterController::class, 'show'])->name('show');
+
+Route::post('/user_login', [RegisterController::class, 'login'])->name('user_login');
 
 
 //admin 2ru routes
