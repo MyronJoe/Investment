@@ -49,5 +49,6 @@ Route::get('/login', [LoginController::class, 'show'])->name('show');
 Route::post('/user_login', [LoginController::class, 'login'])->name('login');
 
 
-//admin 2ru routes
+//will need an admin middleware
+//admin routes
 Route::get('/profile', [AdminController::class, 'Profile'])->name('admin_profile');
