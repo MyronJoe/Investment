@@ -13,7 +13,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- site icon -->
-      <link rel="icon" href="images/fevicon.png" type="image/png" />
+      <link rel="icon" href="backend/images/fevicon.png" type="image/png" />
       <!-- bootstrap css -->
       <link rel="stylesheet" href="backend/css/bootstrap.min.css" />
       <!-- site css -->
@@ -38,13 +38,13 @@
                <div class="sidebar_blog_1">
                   <div class="sidebar-header">
                      <div class="logo_section">
-                        <a href="index.html"><img class="logo_icon img-responsive" src="images/logo/logo_icon.png" alt="#" /></a>
+                        <a href="index.html"><img class="logo_icon img-responsive" src="backend/images/logo/logo_icon.png" alt="#" /></a>
                      </div>
                   </div>
                   <div class="sidebar_user_info">
                      <div class="icon_setting"></div>
                      <div class="user_profle_side">
-                        <div class="user_img"><img class="img-responsive" src="images/layout_img/user_img.jpg" alt="#" /></div>
+                        <div class="user_img"><img class="img-responsive" src="backend/images/layout_img/user_img.jpg" alt="#" /></div>
                         <div class="user_info">
                            <h6>John David</h6>
                            <p><span class="online_animation"></span> Online</p>
@@ -122,7 +122,7 @@
                      <div class="full">
                         <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i class="fa fa-bars"></i></button>
                         <div class="logo_section">
-                           <a href="index.html"><img class="img-responsive" src="images/logo/logo.png" alt="#" /></a>
+                           <a href="index.html"><img class="img-responsive" src="backend/images/logo/logo.png" alt="#" /></a>
                         </div>
                         <div class="right_topbar">
                            <div class="icon_info">
@@ -133,7 +133,7 @@
                               </ul>
                               <ul class="user_profile_dd">
                                  <li>
-                                    <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" src="images/layout_img/user_img.jpg" alt="#" /><span class="name_user">John David</span></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" src="backend/images/layout_img/user_img.jpg" alt="#" /><span class="name_user">John David</span></a>
                                     <div class="dropdown-menu">
                                        <a class="dropdown-item" href="profile.html">My Profile</a>
                                        <a class="dropdown-item" href="settings.html">Settings</a>
@@ -339,17 +339,17 @@
                                              <!-- Wrapper for carousel items -->
                                              <div class="carousel-inner">
                                                 <div class="item carousel-item active">
-                                                   <div class="img-box"><img src="images/layout_img/user_img.jpg" alt=""></div>
+                                                   <div class="img-box"><img src="backend/images/layout_img/user_img.jpg" alt=""></div>
                                                    <p class="testimonial">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae..</p>
                                                    <p class="overview"><b>Michael Stuart</b>Seo Founder</p>
                                                 </div>
                                                 <div class="item carousel-item">
-                                                   <div class="img-box"><img src="images/layout_img/user_img.jpg" alt=""></div>
+                                                   <div class="img-box"><img src="backend/images/layout_img/user_img.jpg" alt=""></div>
                                                    <p class="testimonial">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae..</p>
                                                    <p class="overview"><b>Michael Stuart</b>Seo Founder</p>
                                                 </div>
                                                 <div class="item carousel-item">
-                                                   <div class="img-box"><img src="images/layout_img/user_img.jpg" alt=""></div>
+                                                   <div class="img-box"><img src="backend/images/layout_img/user_img.jpg" alt=""></div>
                                                    <p class="testimonial">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae..</p>
                                                    <p class="overview"><b>Michael Stuart</b>Seo Founder</p>
                                                 </div>
@@ -452,7 +452,7 @@
                                  <div class="msg_list_main">
                                     <ul class="msg_list">
                                        <li>
-                                          <span><img src="images/layout_img/msg2.png" class="img-responsive" alt="#" /></span>
+                                          <span><img src="backend/images/layout_img/msg2.png" class="img-responsive" alt="#" /></span>
                                           <span>
                                           <span class="name_user">Herman Beck</span>
                                           <span class="msg_user">Sed ut perspiciatis unde omnis.</span>
@@ -460,7 +460,7 @@
                                           </span>
                                        </li>
                                        <li>
-                                          <span><img src="images/layout_img/msg3.png" class="img-responsive" alt="#" /></span>
+                                          <span><img src="backend/images/layout_img/msg3.png" class="img-responsive" alt="#" /></span>
                                           <span>
                                           <span class="name_user">John Smith</span>
                                           <span class="msg_user">On the other hand, we denounce.</span>
@@ -468,7 +468,7 @@
                                           </span>
                                        </li>
                                        <li>
-                                          <span><img src="images/layout_img/msg2.png" class="img-responsive" alt="#" /></span>
+                                          <span><img src="backend/images/layout_img/msg2.png" class="img-responsive" alt="#" /></span>
                                           <span>
                                           <span class="name_user">John Smith</span>
                                           <span class="msg_user">Sed ut perspiciatis unde omnis.</span>
@@ -476,7 +476,7 @@
                                           </span>
                                        </li>
                                        <li>
-                                          <span><img src="images/layout_img/msg3.png" class="img-responsive" alt="#" /></span>
+                                          <span><img src="backend/images/layout_img/msg3.png" class="img-responsive" alt="#" /></span>
                                           <span>
                                           <span class="name_user">John Smith</span>
                                           <span class="msg_user">On the other hand, we denounce.</span>
