@@ -19,19 +19,13 @@
             </div>
             <div class="col-lg-6 col-xl-5">
                 <div class="account__form__wrapper">
-                    <h3 class="title">Create Your Account</h3>
-                    <form class="form account__form" autocomplete="off" action="{{route('addUser')}}" method="POST">
+                    <h3 class="title">Sign In</h3>
+                    <form class="form account__form" autocomplete="off" action="{{route('login')}}" method="POST">
                         @csrf
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control form--control" placeholder="Username" value="{{ old('name') }}">
-                            @error('name')
-                            <span class="text-danger">{{ $message }}</span>
-                            @enderror
-                        </div>
 
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control form--control" placeholder="Email" value="{{ old('email') }}">
-                            @error('email')
+                            <input type="email" name="username" class="form-control form--control" placeholder="username" value="{{ old('username') }}">
+                            @error('username')
                             <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -43,18 +37,11 @@
                             @enderror
                         </div>
 
-                        <div class="form-group">
-                            <input type="password" name="confirm_password" class="form-control form--control" placeholder="Re-Password" value="{{ old('confirm_password') }}">
-                            @error('confirm_password')
-                            <span class="text-danger">{{ $message }}</span>
-                            @enderror
-                        </div>
 
-
-                        <button class="btn cmn--btn mt-4" name="adduser">Register</button>
+                        <button class="btn cmn--btn mt-4" name="adduser">Login</button>
                     </form>
 
-                    <p class="mt-4">Already you have an account in here? <a class="ms-2 text--base" href="{{route('show')}}">Sign In</a></p>
+                    <p class="mt-4">Do not have an account in here? <a class="ms-2 text--base" href="{{route('register')}}">Sign In</a></p>
                 </div>
             </div>
         </div>

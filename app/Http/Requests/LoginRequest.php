@@ -44,6 +44,8 @@ class LoginRequest extends FormRequest
         // we have to check if user has entered one or another
         $username = $this->get('username');
 
+        // dd($username);
+
         if ($this->isEmail($username)) {
             return [
                 'email' => $username,
