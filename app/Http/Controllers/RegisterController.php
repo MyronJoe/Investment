@@ -14,7 +14,7 @@ class RegisterController extends Controller
 
         return view('frontend.register');
     }
-    
+
 
     //addAdmin to DB
     public function AddUser(Request $request)
