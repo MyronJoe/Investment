@@ -20,7 +20,7 @@
             <div class="col-lg-6 col-xl-5">
                 <div class="account__form__wrapper">
                     <h3 class="title">Sign In</h3>
-                    
+
                     <x-validation-errors class="mb-4 " />
 
                     <form class="form account__form" autocomplete="off" action="{{route('login')}}" method="POST">
