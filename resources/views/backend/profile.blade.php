@@ -6,6 +6,7 @@
             <!-- Sidebar  -->
             @include('backend.includes.sidebar')
             <!-- end sidebar -->
+            
             <!-- right content -->
             <div id="content">
                 <!-- topbar -->
