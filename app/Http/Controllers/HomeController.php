@@ -26,10 +26,11 @@ class HomeController extends Controller
     }
 
 
-    
+
 
     //user dashboard
-    public function UserDashboard(){
+    public function UserDashboard()
+    {
 
         return view('frontend.dashboard');
     }
