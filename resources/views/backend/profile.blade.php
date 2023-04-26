@@ -43,13 +43,13 @@
                                                             <h3>{{ Auth::user()->name }}</h3>
                                                             <p><strong><i class="fa fa-envelope-o"></i> : </strong>{{ Auth::user()->email }}</p>
                                                             <ul class="list-unstyled">
-                                                                
+
                                                                 <li><i class="fa fa-phone"></i> : 987 654 3210</li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
