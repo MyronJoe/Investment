@@ -25,11 +25,11 @@
                         <a href="{{route('about')}}">About</a>
                     </li>
                     <li>
-                        <a href="{{route('contact')}}">Plan</a>
+                        <a href="#">Plan</a>
                     </li>
 
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="{{route('contact')}}">Contact</a>
                     </li>
 
                     @if (Route::has('login'))
