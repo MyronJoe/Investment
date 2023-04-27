@@ -247,66 +247,59 @@
 <!-- Referral Section Ends Here -->
 
 
-<!-- Investor Section Starts Here -->
-<section class="investor-section padding-top padding-bottom">
+<!-- Faq Section Starts Here -->
+<section class="faq-section padding-bottom overflow-hidden">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-10">
-                <div class="section__header text-center">
-                    <h2 class="section__header-title">Our Best Investor</h2>
-                    <p>Aenean vulputate eleifend tellus. Aenean leo ligul porttitoeu consequat vitae eleifend.</p>
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-6">
+                <div class="section__header mb-0">
+                    <h2 class="section__header-title">What Your Want to Know About Us ?</h2>
+                    <div class="faq__wrapper">
+                        <div class="faq__item style--two">
+                            <div class="faq__item-title">
+                                <h4 class="title">Why You should become an Investor?</h4>
+                            </div>
+                            <div class="faq__item-content">
+                                <p>Fringilla mauris amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales augue velit cursus nunc quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy idmetus</p>
+                            </div>
+                        </div>
+                        <div class="faq__item style--two">
+                            <div class="faq__item-title">
+                                <h4 class="title">Why You Choose Us?</h4>
+                            </div>
+                            <div class="faq__item-content">
+                                <p>Fringilla mauris amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales augue velit cursus nunc quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy idmetus</p>
+                            </div>
+                        </div>
+
+                        <div class="faq__item style--two">
+                            <div class="faq__item-title">
+                                <h4 class="title">What is Hyip Investment?</h4>
+                            </div>
+                            <div class="faq__item-content">
+                                <p>Fringilla mauris amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales augue velit cursus nunc quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy idmetus</p>
+                            </div>
+                        </div>
+                        <div class="faq__item style--two">
+                            <div class="faq__item-title">
+                                <h4 class="title">How to do we work?</h4>
+                            </div>
+                            <div class="faq__item-content">
+                                <p>Fringilla mauris amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales augue velit cursus nunc quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy idmetus</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center gy-5">
-            <div class="col-xl-3 col-lg-4 col-sm-6">
-                <div class="investor__item">
-                    <div class="investor__item-thumb">
-                        <img src="assets/images/investor/investor1.png" alt="investor">
-                    </div>
-                    <div class="investor__item-content">
-                        <h3 class="name">Robart Williams</h3>
-                        <p class="invest-amount">Invest 250 USD</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
-                <div class="investor__item">
-                    <div class="investor__item-thumb">
-                        <img src="assets/images/investor/investor2.png" alt="investor">
-                    </div>
-                    <div class="investor__item-content">
-                        <h3 class="name">Munna Ahmed</h3>
-                        <p class="invest-amount">Invest 350 USD</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
-                <div class="investor__item">
-                    <div class="investor__item-thumb">
-                        <img src="assets/images/investor/investor3.png" alt="investor">
-                    </div>
-                    <div class="investor__item-content">
-                        <h3 class="name">Maliha Mahtab</h3>
-                        <p class="invest-amount">Invest 450 USD</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
-                <div class="investor__item">
-                    <div class="investor__item-thumb">
-                        <img src="assets/images/investor/investor4.png" alt="investor">
-                    </div>
-                    <div class="investor__item-content">
-                        <h3 class="name">Taposhi Ahmed</h3>
-                        <p class="invest-amount">Invest 550 USD</p>
-                    </div>
+            <div class="col-lg-5 d-none d-lg-block">
+                <div class="section__thumb ">
+                    <img src="assets/images/faq/thumb.png" alt="download">
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Investor Section Ends Here -->
+<!-- Faq Section Ends Here -->
 
 
 <!-- Footer Section Starts Here -->
