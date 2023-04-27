@@ -89,6 +89,225 @@
 </section>
 <!-- Feature Two Section Ends Here -->
 
+<!-- Plan Section Starts Here -->
+<section class="plan-section padding-bottom">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-10">
+                <div class="section__header text-center">
+                    <h2 class="section__header-title">Our Investment Plan</h2>
+                    <p>Aenean vulputate eleifend tellus. Aenean leo ligul porttitoeu consequat vitae eleifend </p>
+                </div>
+            </div>
+        </div>
+        <div class="plan__slider">
+            <div class="single-slide">
+                <div class="plan__item">
+                    <div class="plan__item-header">
+                        <h2 class="plan-parcent">5%</h2>
+                        <p class="plan-parcent-info">After 6 Hours</p>
+                    </div>
+                    <div class="plan__item-body">
+                        <ul class="plan__info">
+                            <li>
+                                <span class="title">Min :</span>
+                                <span class="value">15 USD</span>
+                            </li>
+                            <li>
+                                <span class="title">Max :</span>
+                                <span class="value">30 USD</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plan__item-footer">
+                        <p class="footer-info"> FOREVER</p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide">
+                <div class="plan__item">
+                    <div class="plan__item-header">
+                        <h2 class="plan-parcent">69%</h2>
+                        <p class="plan-parcent-info">Hourly</p>
+                    </div>
+                    <div class="plan__item-body">
+                        <ul class="plan__info">
+                            <li>
+                                <span class="title">Min :</span>
+                                <span class="value">15 USD</span>
+                            </li>
+                            <li>
+                                <span class="title">Max :</span>
+                                <span class="value">30 USD</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plan__item-footer">
+                        <p class="footer-info"> FOR 8 HOURS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide">
+                <div class="plan__item">
+                    <div class="plan__item-header">
+                        <h2 class="plan-parcent">120%</h2>
+                        <p class="plan-parcent-info">Hourly</p>
+                    </div>
+                    <div class="plan__item-body">
+                        <ul class="plan__info">
+                            <li>
+                                <span class="title">Min :</span>
+                                <span class="value">15 USD</span>
+                            </li>
+                            <li>
+                                <span class="title">Max :</span>
+                                <span class="value">30 USD</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plan__item-footer">
+                        <p class="footer-info"> After 3 Months</p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide">
+                <div class="plan__item">
+                    <div class="plan__item-header">
+                        <h2 class="plan-parcent">200%</h2>
+                        <p class="plan-parcent-info">After 6 Hours</p>
+                    </div>
+                    <div class="plan__item-body">
+                        <ul class="plan__info">
+                            <li>
+                                <span class="title">Min :</span>
+                                <span class="value">15 USD</span>
+                            </li>
+                            <li>
+                                <span class="title">Max :</span>
+                                <span class="value">30 USD</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plan__item-footer">
+                        <p class="footer-info"> After 6 Months</p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide">
+                <div class="plan__item">
+                    <div class="plan__item-header">
+                        <h2 class="plan-parcent">250%</h2>
+                        <p class="plan-parcent-info">After 8 Hours</p>
+                    </div>
+                    <div class="plan__item-body">
+                        <ul class="plan__info">
+                            <li>
+                                <span class="title">Min :</span>
+                                <span class="value">15 USD</span>
+                            </li>
+                            <li>
+                                <span class="title">Max :</span>
+                                <span class="value">30 USD</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plan__item-footer">
+                        <p class="footer-info"> FOREVER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Plan Section Ends Here -->
+
+<!-- Referral Section Starts Here -->
+<section class="referral-section padding-bottom section-bg-two">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 align-self-end d-none d-lg-block">
+                <div class="section__thumb rtl me-5">
+                    <img src="assets/images/referral/thumb.png" alt="referral">
+                    <div class="shapes">
+                        <img src="assets/images/referral/clock.png" alt="referral" class="shape shape1">
+                        <img src="assets/images/referral/man.png" alt="referral" class="shape shape2">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="section__header">
+                    <h2 class="section__header-title">30% Referral Commission</h2>
+                    <p>Aenean vulputate eleifend tellus. Aenea ligul porttitoeu consequat vitae eleifend acenim</p>
+                </div>
+                <a href="sign-up.html" class="cmn--btn">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Referral Section Ends Here -->
+
+
+<!-- Investor Section Starts Here -->
+<section class="investor-section padding-top padding-bottom">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-10">
+                <div class="section__header text-center">
+                    <h2 class="section__header-title">Our Best Investor</h2>
+                    <p>Aenean vulputate eleifend tellus. Aenean leo ligul porttitoeu consequat vitae eleifend.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center gy-5">
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="investor__item">
+                    <div class="investor__item-thumb">
+                        <img src="assets/images/investor/investor1.png" alt="investor">
+                    </div>
+                    <div class="investor__item-content">
+                        <h3 class="name">Robart Williams</h3>
+                        <p class="invest-amount">Invest 250 USD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="investor__item">
+                    <div class="investor__item-thumb">
+                        <img src="assets/images/investor/investor2.png" alt="investor">
+                    </div>
+                    <div class="investor__item-content">
+                        <h3 class="name">Munna Ahmed</h3>
+                        <p class="invest-amount">Invest 350 USD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="investor__item">
+                    <div class="investor__item-thumb">
+                        <img src="assets/images/investor/investor3.png" alt="investor">
+                    </div>
+                    <div class="investor__item-content">
+                        <h3 class="name">Maliha Mahtab</h3>
+                        <p class="invest-amount">Invest 450 USD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="investor__item">
+                    <div class="investor__item-thumb">
+                        <img src="assets/images/investor/investor4.png" alt="investor">
+                    </div>
+                    <div class="investor__item-content">
+                        <h3 class="name">Taposhi Ahmed</h3>
+                        <p class="invest-amount">Invest 550 USD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Investor Section Ends Here -->
+
 
 <!-- Footer Section Starts Here -->
 @include('frontend.include.footer')
