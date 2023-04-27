@@ -14,7 +14,7 @@
             <div class="col-lg-4 col-xl-4 col-xxl-3 col-xl-4">
                 <div class="sidebar dashboard__sidebar">
                     <div class="dashboard-user text-center">
-                        <div class="thumb"><img src="assets/images/dashboard/cc1.png" alt="dashboard"></div>
+                        <div class="thumb"><img src="assets/images/{{ Auth::user()->image }}" alt="{{ Auth::user()->name }}"></div>
                         <div class="content mt-3">
                             <h3 class="name">{{ Auth::user()->name }}</h3>
                             <p class="text-white">{{ Auth::user()->email }}</p>
@@ -54,7 +54,7 @@
                                 <li><a href="#"><i class="las la-envelope"></i></a></li>
                                 <li><a href="#"><i class="las la-bell"></i><span class="badge badge--base badge--round">01</span> </a></li>
                                 <li>
-                                    <div class="user-thumb"><img src="assets/images/dashboard/cc1.png" alt="dashboard"></div>
+                                    <div class="user-thumb"><img src="assets/images/{{ Auth::user()->image }}" alt="dashboard"></div>
                                 </li>
                             </ul>
                         </div>
