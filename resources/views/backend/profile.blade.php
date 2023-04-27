@@ -38,7 +38,7 @@
                                             <!-- profile image -->
                                             <div class="col-lg-12">
                                                 <div class="full dis_flex center_text">
-                                                    <div class="profile_img"><img width="180" class="rounded-circle" src="backend/images/layout_img/user_img.jpg" alt="#" /></div>
+                                                    <div class="profile_img"><img width="180" class="rounded-circle" src="assets/images/profile/{{ Auth::user()->image }}" alt="#" /></div>
                                                     <div class="profile_contant">
                                                         <div class="contact_inner">
                                                             <h3>{{ Auth::user()->name }}</h3>
