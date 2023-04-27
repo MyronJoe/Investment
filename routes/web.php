@@ -49,6 +49,10 @@ Route::get('/login', [LoginController::class, 'show'])->name('show');
 Route::post('/user_login', [LoginController::class, 'login'])->name('login');
 
 
+//frontend routes
+Route::get('/about', [HomeController::class, 'About'])->name('about');
+
+
 //will need an admin middleware
 //admin routes
 Route::get('/profile', [AdminController::class, 'Profile'])->name('admin_profile');

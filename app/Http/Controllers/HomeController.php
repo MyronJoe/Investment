@@ -26,12 +26,18 @@ class HomeController extends Controller
     }
 
 
-
-
     //user dashboard
     public function UserDashboard()
     {
 
         return view('frontend.dashboard');
     }
+
+    //About
+    public function About(){
+
+        return view('frontend.about');
+    }
+
+
 }
