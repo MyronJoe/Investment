@@ -12,7 +12,7 @@
         <div class="inner__banner__content text-center">
             <h2 class="title">About Company</h2>
             <ul class="breadcums d-flex flex-wrap justify-content-center">
-                <li><a href="index.html">Home</a>//</li>
+                <li><a href="/">Home</a>//</li>
                 <li>About</li>
             </ul>
         </div>
