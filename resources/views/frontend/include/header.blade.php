@@ -25,7 +25,7 @@
                         <a href="{{route('about')}}">About</a>
                     </li>
                     <li>
-                        <a href="plan.html">Plan</a>
+                        <a href="{{route('contact')}}">Plan</a>
                     </li>
 
                     <li>
