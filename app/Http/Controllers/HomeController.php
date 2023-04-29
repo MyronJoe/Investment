@@ -34,16 +34,16 @@ class HomeController extends Controller
     }
 
     //About
-    public function About(){
+    public function About()
+    {
 
         return view('frontend.about');
     }
 
     //Contact
-    public function Contact(){
+    public function Contact()
+    {
 
         return view('frontend.contact');
     }
-
-
 }
