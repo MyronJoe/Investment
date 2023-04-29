@@ -22,11 +22,7 @@ Route::get('/', function () {
     return view('frontend.home');
 });
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
 
     Route::get('/home', [HomeController::class, 'Home'])->name('home');
 
