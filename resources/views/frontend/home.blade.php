@@ -16,11 +16,9 @@
     @include('frontend.include.why_us')
     <!-- Why Choose Us Section Ends Here -->
 
-
     <!-- Plan Section Starts Here -->
     @include('frontend.include.plans')
     <!-- Plan Section Ends Here -->
-
 
     <!-- Profit Calculation Section Starts Here -->
     @include('frontend.include.calculate')
