@@ -24,16 +24,13 @@
     @include('frontend.include.calculate')
     <!-- Profit Calculation Section Ends Here -->
 
-
     <!-- Feature Section Starts Here -->
     @include('frontend.include.feature')
     <!-- Feature Section Ends Here -->
 
-
     <!-- Referral Section Starts Here -->
     @include('frontend.include.referral')
     <!-- Referral Section Ends Here -->
-
 
     <!-- Investor Section Starts Here -->
     @include('frontend.include.investors')
