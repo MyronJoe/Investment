@@ -8,11 +8,9 @@
     @include('frontend.include.header')
     <!-- /HEADER -->
 
-
     <!-- Banner Section Starts Here -->
     @include('frontend.include.banner')
     <!-- Banner Section Ends Here -->
-
 
     <!-- Why Choose Us Section Starts Here -->
     @include('frontend.include.why_us')
