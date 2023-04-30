@@ -3,7 +3,6 @@
 <!-- /links -->
 
 <body>
-
     <!-- HEADER -->
     @include('frontend.include.header')
     <!-- /HEADER -->
@@ -36,41 +35,33 @@
     @include('frontend.include.investors')
     <!-- Investor Section Ends Here -->
 
-
     <!-- Download Section Starts Here -->
     @include('frontend.include.download')
     <!-- Download Section Ends Here -->
-
 
     <!-- Faq Section Starts Here -->
     @include('frontend.include.faq')
     <!-- Faq Section Ends Here -->
 
-
     <!-- Transection Section Starts Here -->
     @include('frontend.include.transection')
     <!-- Transection Section Ends Here -->
-
 
     <!-- Testimonial Section Starts Here -->
     @include('frontend.include.test')
     <!-- Testimonial Section Ends Here -->
 
-
     <!-- Blog Section STartrs Here -->
     @include('frontend.include.blog')
     <!-- Blog Section Ends Here -->
-
 
     <!-- Brand Section Starts Here -->
     @include('frontend.include.brand')
     <!-- Brand Section Ends Here -->
 
-
     <!-- Footer Section Starts Here -->
     @include('frontend.include.footer')
     <!-- Footer Section Ends Here -->
-
 
     <a href="#0" class="scrollToTop"><i class="las la-rocket"></i></a>
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
