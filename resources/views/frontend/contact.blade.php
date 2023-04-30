@@ -24,7 +24,6 @@
 </div>
 <!-- Banner Section Ends Here -->
 
-
 <!-- Contact Section Starts Here -->
 <div class="contact-section">
     <div class="container">
@@ -96,11 +95,9 @@
 </div>
 <!-- Contact Section Ends Here -->
 
-
 <!-- Footer Section Starts Here -->
 @include('frontend.include.footer')
 <!-- Footer Section Ends Here -->
-
 
 <a href="#0" class="scrollToTop"><i class="las la-rocket"></i></a>
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
