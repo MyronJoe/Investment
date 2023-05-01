@@ -85,7 +85,6 @@
                             </div>
                         </div>
 
-
                         <!-- table section -->
                         <div class="col-md-12">
                             <div class="white_shd full margin_bottom_30">
