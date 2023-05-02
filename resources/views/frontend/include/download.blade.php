@@ -22,9 +22,7 @@
                         </div>
                     </a>
                 </div>
-                
                 <div class="counter__wrapper row gy-4 gy-sm-5 pt-4 pt-sm-5">
-                    
                     <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-4">
                         <div class="counter__item">
                             <div class="counter__item-header d-flex align-items-center">
@@ -36,7 +34,6 @@
                             <p class="info">Active Members</p>
                         </div>
                     </div>
-
                     <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-4">
                         <div class="counter__item">
                             <div class="counter__item-header d-flex align-items-center">
@@ -48,7 +45,6 @@
                             <p class="info">Our Total Deposit</p>
                         </div>
                     </div>
-
                     <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-4">
                         <div class="counter__item">
                             <div class="counter__item-header d-flex align-items-center">
