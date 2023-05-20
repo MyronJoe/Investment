@@ -15,11 +15,9 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/odometer.css">
-
     <!-- Custom Link -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-
     <title>TENDIX-FX</title>
 
     <style>
