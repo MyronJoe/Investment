@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
-    <title>Joe - Hyip Investment Business</title>
+    <title>TENDIX-FX</title>
 
     <style>
         .form-control{
