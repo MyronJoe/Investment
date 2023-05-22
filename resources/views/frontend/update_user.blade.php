@@ -50,6 +50,16 @@
                             @enderror
                         </div>
 
+                        <p>*Image: </p>
+                        <img src="" alt="">
+
+                        <div class="form-group">
+                            <input type="file" name="image" class="form-control form--control">
+                            @error('confirm_password')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
 
                         <button class="btn cmn--btn mt-4" name="adduser">Update</button>
                     </form>
