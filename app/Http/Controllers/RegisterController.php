@@ -74,6 +74,7 @@ class RegisterController extends Controller
         ]);
 
         $datas = User::findOrFail($id);
+        $userId = Auth::id();
 
         //checks if the email already exist && != any other email in the database b4 adding to database
         $email = User::where('email', $request->email)->exists();
@@ -87,7 +88,7 @@ class RegisterController extends Controller
 
             $datas->save();
 
-            Auth::login($datas, $remember = true);
+            Auth::login($userId, $remember = true);
             return redirect()->route('home');
         }
         
