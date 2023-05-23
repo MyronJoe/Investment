@@ -54,7 +54,7 @@
                         <button class="btn cmn--btn mt-4" name="adduser">Register</button>
                     </form>
 
-                    <p class="mt-4">Already you have an account in here? <a class="ms-2 text--base" href="{{route('show')}}">Sign In</a></p>
+                    <p class="mt-4">Already you have an account in here? <a class="ms-2 text--base" href="{{route('login')}}">Sign In</a></p>
                 </div>
             </div>
         </div>

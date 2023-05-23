@@ -46,9 +46,9 @@ Route::post('/adduser', [RegisterController::class, 'AddUser'])->name('addUser')
 
 
 //Login user route
-Route::get('/login', [LoginController::class, 'show'])->name('show');
+Route::get('/login', [LoginController::class, 'login'])->name('login');
 
-Route::post('/user_login', [LoginController::class, 'login'])->name('login');
+Route::post('/user_login', [LoginController::class, 'login_user'])->name('login_user');
 
 
 //frontend routes

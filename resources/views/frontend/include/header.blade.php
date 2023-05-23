@@ -55,7 +55,7 @@
                             @auth
                             <a href="{{url('logout')}}" class="cmn--btn">Logout</a>
                             @else
-                            <a href="{{route('show')}}" class="cmn--btn">Login</a>
+                            <a href="{{route('login')}}" class="cmn--btn">Login</a>
                             @endauth
                             @endif
                         </div>
@@ -78,7 +78,7 @@
                     @auth
                     <a href="{{route('logout')}}" class="cmn--btn">Logout</a>
                     @else
-                    <a href="{{route('show')}}" class="cmn--btn">Login</a>
+                    <a href="{{route('login')}}" class="cmn--btn">Login</a>
                     @endauth
                     @endif
 

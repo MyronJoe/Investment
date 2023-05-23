@@ -23,7 +23,7 @@
 
                     <x-validation-errors class="mb-4 " />
 
-                    <form class="form account__form" autocomplete="off" action="{{route('login')}}" method="POST">
+                    <form class="form account__form" autocomplete="off" action="{{route('login_user')}}" method="POST">
                         @csrf
 
                         <div class="form-group">

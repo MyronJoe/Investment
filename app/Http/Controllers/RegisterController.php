@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
@@ -47,7 +48,8 @@ class RegisterController extends Controller
             $data->save();
 
             // Alert::success('Admin Created Successfully');
-            return redirect()->back();
+            Auth::login($data, $remember = true);
+            return redirect()->route('home');
         }
     }
 
@@ -71,19 +73,22 @@ class RegisterController extends Controller
             'confirm_password' => 'required_with:password|same:password|min:8|string'
         ]);
 
-        $data = User::findOrFail($id);
+        $datas = User::findOrFail($id);
 
         //checks if the email already exist && != any other email in the database b4 adding to database
         $email = User::where('email', $request->email)->exists();
 
-        if ($email && $data->email !== $request->email) {
+        if ($email && $datas->email !== $request->email) {
             return redirect()->back();
         } else {
-            $data->name = $request->name;
-            $data->email = $request->email;
-            $data->password = Hash::make($request->password);
+            $datas->name = $request->name;
+            $datas->email = $request->email;
+            $datas->password = Hash::make($request->password);
 
-            $data->save();
+            $datas->save();
+
+            Auth::login($datas, $remember = true);
+            return redirect()->route('home');
         }
         
     }

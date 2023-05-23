@@ -13,7 +13,7 @@ class LoginController extends Controller
      * 
      * @return Renderable
      */
-    public function show()
+    public function login()
     {
         return view('frontend.login');
     }
@@ -25,7 +25,7 @@ class LoginController extends Controller
      * 
      * @return \Illuminate\Http\Response
      */
-    public function login(LoginRequest $request)
+    public function login_user(LoginRequest $request)
     {
         $credentials = $request->getCredentials();
 
