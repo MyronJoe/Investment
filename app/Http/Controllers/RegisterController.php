@@ -71,6 +71,20 @@ class RegisterController extends Controller
             'confirm_password' => 'required_with:password|same:password|min:8|string'
         ]);
 
-        $user = User::findOrFail($id);
+        $data = User::findOrFail($id);
+
+        //checks if the email already exist && != any other email in the database b4 adding to database
+        $email = User::where('email', $request->email)->exists();
+
+        if ($email && $data->email !== $request->email) {
+            return redirect()->back();
+        } else {
+            $data->name = $request->name;
+            $data->email = $request->email;
+            $data->password = Hash::make($request->password);
+
+            $data->save();
+        }
+        
     }
 }
