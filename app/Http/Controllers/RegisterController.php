@@ -88,7 +88,7 @@ class RegisterController extends Controller
 
             $datas->save();
 
-            Auth::login($userId, $remember = true);
+            Auth::login($datas, $remember = true);
             return redirect()->route('home');
         }
         
