@@ -22,15 +22,9 @@
                     </div>
                     <ul class="dashbard__tab tags">
                         <li><a href="#" class="active">Overview</a></li>
-                        <li><a href="#">Max Deposit</a></li>
-                        <li><a href="#">Withdraw Fund</a></li>
-                        <li><a href="#">Deposit List</a></li>
-                        <li><a href="#">Deposit History</a></li>
-                        <li><a href="#">Earnings History</a></li>
-                        <li><a href="#">Referral Link</a></li>
-                        <li><a href="{{route('edit_user', Auth::user()->id)}}">Account Settings</a></li>
-                        <li><a href="#">Security Settings</a></li>
-                        <li><a href="#">Sign Out</a></li>
+                        <li><a href="{{route('edit_user', Auth::user()->id)}}">Update Details</a></li>
+                        <li><a href="#">Change Password</a></li>
+                        <li><a href="{{route('logout')}}">Sign Out</a></li>
                     </ul>
                     <button class="btn-close btn-close-white d-lg-none"></button>
                 </div>
@@ -155,107 +149,9 @@
                                 <td data-label="Date"><span class="date">25 May 2021</span></td>
                                 <td data-label="Currency"><span class="currency">NSU</span></td>
                             </tr>
-                            <tr>
-                                <td data-label="User Name">
-                                    <div class="user d-flex flex-wrap align-items-center">
-                                        <div class="thumb">
-                                            <img src="assets/images/dashboard/item4.png" alt="dashboard">
-                                        </div>
-                                        <p class="name">Robert Mahfuj</p>
-                                    </div>
-                                </td>
-                                <td data-label="Amount"><span class="amount">$1500</span></td>
-                                <td data-label="Wallet"><span class="wallet">Bank Wire</span></td>
-                                <td data-label="Date"><span class="date">25 Feb 2021</span></td>
-                                <td data-label="Currency"><span class="currency">BIT</span></td>
-                            </tr>
-                            <tr>
-                                <td data-label="User Name">
-                                    <div class="user d-flex flex-wrap align-items-center">
-                                        <div class="thumb">
-                                            <img src="assets/images/dashboard/item5.png" alt="dashboard">
-                                        </div>
-                                        <p class="name">Jibon Khan</p>
-                                    </div>
-                                </td>
-                                <td data-label="Amount"><span class="amount">$2500</span></td>
-                                <td data-label="Wallet"><span class="wallet">Paypal</span></td>
-                                <td data-label="Date"><span class="date">25 May 2021</span></td>
-                                <td data-label="Currency"><span class="currency">USD</span></td>
-                            </tr>
                         </tbody>
                     </table>
-                    <div class="row pt-5 gy-4">
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="dashboard__card style--two">
-                                <div class="dashboard__card-icon">
-                                    <i class="las la-wallet"></i>
-                                </div>
-                                <div class="dashboard__card-content">
-                                    <p class="info">Total Balance</p>
-                                    <h3 class="title">587 USD</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="dashboard__card style--two">
-                                <div class="dashboard__card-icon">
-                                    <i class="las la-money-bill-alt"></i>
-                                </div>
-                                <div class="dashboard__card-content">
-                                    <p class="info">Earning Total</p>
-                                    <h3 class="title">587 USD</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="title mt-5 mb-4">Top Investors</h3>
-                    <div class="row justify-content-center gy-4">
-                        <div class="col-xl-4 col-xxl-3 col-md-4 col-sm-6">
-                            <div class="investor__item style--two">
-                                <div class="investor__item-thumb">
-                                    <img src="assets/images/investor/item1.png" alt="investor">
-                                </div>
-                                <div class="investor__item-content">
-                                    <h4 class="name">Robart Williams</h4>
-                                    <p class="invest-amount">Invest 250 USD</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-xxl-3 col-md-4 col-sm-6">
-                            <div class="investor__item style--two">
-                                <div class="investor__item-thumb">
-                                    <img src="assets/images/investor/item2.png" alt="investor">
-                                </div>
-                                <div class="investor__item-content">
-                                    <h4 class="name">Munna Ahmed</h4>
-                                    <p class="invest-amount">Invest 350 USD</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-xxl-3 col-md-4 col-sm-6">
-                            <div class="investor__item style--two">
-                                <div class="investor__item-thumb">
-                                    <img src="assets/images/investor/item3.png" alt="investor">
-                                </div>
-                                <div class="investor__item-content">
-                                    <h4 class="name">Maliha Mahtab</h4>
-                                    <p class="invest-amount">Invest 450 USD</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-xxl-3 col-md-4 col-sm-6">
-                            <div class="investor__item style--two">
-                                <div class="investor__item-thumb">
-                                    <img src="assets/images/investor/item4.png" alt="investor">
-                                </div>
-                                <div class="investor__item-content">
-                                    <h4 class="name">Munna Ahmed</h4>
-                                    <p class="invest-amount">Invest 550 USD</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
