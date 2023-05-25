@@ -83,7 +83,12 @@ class RegisterController extends Controller
         } else {
             $datas->name = $request->name;
             $datas->email = $request->email;
-            // $datas->password = Hash::make($request->password);
+
+            if ($request->image) {
+                $imageName = time() . '_' . $request->image->getClientOriginalName();
+                $request->image->move('assets/images/profile', $imageName);
+                $datas->image = $imageName;
+            }
 
             $datas->save();
 
@@ -92,6 +97,5 @@ class RegisterController extends Controller
 
             return redirect()->route('user_dashboard');
         }
-        
     }
 }
