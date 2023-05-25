@@ -66,19 +66,19 @@
                             @enderror
                         </div>
 
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <input type="password" name="password" class="form-control form--control" placeholder="Password" value="{{ old('password') }}">
                             @error('password')
                             <span class="text-danger">{{ $message }}</span>
                             @enderror
-                        </div>
+                        </div> -->
 
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <input type="password" name="confirm_password" class="form-control form--control" placeholder="Re-Password" value="{{ old('confirm_password') }}">
                             @error('confirm_password')
                             <span class="text-danger">{{ $message }}</span>
                             @enderror
-                        </div>
+                        </div> -->
 
                         <img src="../assets/images/profile/{{ $user->image }}" alt="{{ $user->name }} image" style="height:120px; width:120px; object-fit:cover; border-radius:100%;">
 

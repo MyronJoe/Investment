@@ -69,12 +69,11 @@ class RegisterController extends Controller
         $request->validate([
             'name' => 'required|string',
             'email' => 'required|string',
-            'password' => 'required|string|min:8',
-            'confirm_password' => 'required_with:password|same:password|min:8|string'
+            // 'password' => 'required|string|min:8',
+            // 'confirm_password' => 'required_with:password|same:password|min:8|string'
         ]);
 
         $datas = User::findOrFail($id);
-        $userId = Auth::id();
 
         //checks if the email already exist && != any other email in the database b4 adding to database
         $email = User::where('email', $request->email)->exists();
@@ -84,16 +83,14 @@ class RegisterController extends Controller
         } else {
             $datas->name = $request->name;
             $datas->email = $request->email;
-            $datas->password = Hash::make($request->password);
+            // $datas->password = Hash::make($request->password);
 
             $datas->save();
 
-            // Auth::login($datas, $remember = true);
-            $credentials = $request->only('email', 'password');
+            // $credentials = $request->only('email', 'password');
+            // Auth::guard('guest')->attempt($credentials);
 
-            Auth::guard('guest')->attempt($credentials);
-
-            return redirect()->route('home');
+            return redirect()->route('user_dashboard');
         }
         
     }
