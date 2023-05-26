@@ -98,4 +98,12 @@ class RegisterController extends Controller
             return redirect()->route('user_dashboard');
         }
     }
+
+    //Update user password to DB
+    public function Update_Pass($id)
+    {
+        $user = User::findOrFail($id);
+
+        return view('frontend.update_password', compact('user'));
+    }
 }

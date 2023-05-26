@@ -33,6 +33,8 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
 
     Route::post('/update_user/{id}', [RegisterController::class, 'Update_User'])->name('update_user');
 
+    Route::get('/change_password/{id}', [RegisterController::class, 'Update_Pass'])->name('update_pass');
+
 });
 
 //Logout out

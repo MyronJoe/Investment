@@ -23,7 +23,7 @@
                     <ul class="dashbard__tab tags">
                         <li><a href="#" class="active">Overview</a></li>
                         <li><a href="{{route('edit_user', Auth::user()->id)}}">Update Details</a></li>
-                        <li><a href="#">Change Password</a></li>
+                        <li><a href="{{route('update_pass', Auth::user()->id)}}">Change Password</a></li>
                         <li><a href="{{route('logout')}}">Sign Out</a></li>
                     </ul>
                     <button class="btn-close btn-close-white d-lg-none"></button>
