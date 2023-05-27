@@ -16,7 +16,7 @@
     <div class="header-bottom">
         <div class="container">
             <div class="header-bottom-area">
-                <div class="logo"><a href="/"><img src="assets/images/logo.png" alt="logo"></a></div>
+                <div class="logo"><a href="/"><img src="../assets/images/logo.png" alt="logo"></a></div>
                 <ul class="menu">
                     <li>
                         <a href="/">Home</a>

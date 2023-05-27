@@ -44,12 +44,12 @@
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-6 col-xl-5 d-none d-lg-block">
                 <div class="section__thumb rtl me-5">
-                    <img src="assets/images/account/thumb.png" alt="account">
+                    <img src="../assets/images/account/thumb.png" alt="account">
                 </div>
             </div>
             <div class="col-lg-6 col-xl-5">
                 <div class="account__form__wrapper">
-                    <h3 class="title">Update Password</h3>
+                    <h3 class="title">Change Password</h3>
                     <form class="form account__form" autocomplete="off" action="{{route('update_user', $user->id)}}" method="POST" enctype="multipart/form-data">
                         @csrf
                        
