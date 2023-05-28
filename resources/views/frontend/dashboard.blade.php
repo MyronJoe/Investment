@@ -28,7 +28,7 @@
                         <li><a href="#">Deposit History</a></li>
                         <li><a href="#">Earnings History</a></li>
                         <li><a href="#">Referral Link</a></li>
-                        <li><a href="{{route('edit_user')}}">Account Settings</a></li>
+                        <li><a href="{{route('edit_user', Auth::user()->id)}}">Account Settings</a></li>
                         <li><a href="#">Security Settings</a></li>
                         <li><a href="#">Sign Out</a></li>
                     </ul>

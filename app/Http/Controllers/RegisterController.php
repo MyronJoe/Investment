@@ -53,7 +53,7 @@ class RegisterController extends Controller
 
 
     //Edit user to DB
-    public function Edit_user(Request $request)
+    public function Edit_user($id)
     {
         return view('frontend.update_user');
     }

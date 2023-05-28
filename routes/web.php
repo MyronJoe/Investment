@@ -29,7 +29,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::get('/dashboard', [HomeController::class, 'UserDashboard'])->name('user_dashboard');
 
     //Update user route
-    Route::get('/edit_user', [RegisterController::class, 'Edit_user'])->name('edit_user');
+    Route::get('/edit_user/{id}', [RegisterController::class, 'Edit_user'])->name('edit_user');
 
 });
 
