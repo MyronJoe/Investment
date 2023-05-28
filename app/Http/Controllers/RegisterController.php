@@ -16,7 +16,7 @@ class RegisterController extends Controller
     }
 
 
-    //addAdmin to DB
+    //add user to DB
     public function AddUser(Request $request)
     {
         //validate user form
@@ -49,5 +49,12 @@ class RegisterController extends Controller
             // Alert::success('Admin Created Successfully');
             return redirect()->back();
         }
+    }
+
+
+    //Edit user to DB
+    public function Edit_user(Request $request)
+    {
+        return view('frontend.update_user');
     }
 }
