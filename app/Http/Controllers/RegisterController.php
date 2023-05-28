@@ -55,6 +55,8 @@ class RegisterController extends Controller
     //Edit user to DB
     public function Edit_user($id)
     {
-        return view('frontend.update_user');
+        $user = User::findOrFail($id);
+
+        return view('frontend.update_user', compact('user'));
     }
 }
