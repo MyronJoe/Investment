@@ -59,4 +59,18 @@ class RegisterController extends Controller
 
         return view('frontend.update_user', compact('user'));
     }
+
+    //Update_User
+    public function Update_User($id, Request $request)
+    {
+        //validate update form
+        $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|string',
+            'password' => 'required|string|min:8',
+            'confirm_password' => 'required_with:password|same:password|min:8|string'
+        ]);
+
+        $user = User::findOrFail($id);
+    }
 }

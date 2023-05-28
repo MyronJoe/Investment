@@ -86,9 +86,6 @@
 
                         <div class="form-group">
                             <input type="file" name="image" class="form-control form--control">
-                            @error('confirm_password')
-                            <span class="text-danger">{{ $message }}</span>
-                            @enderror
                         </div>
 
 

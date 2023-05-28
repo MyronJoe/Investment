@@ -31,7 +31,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     //Update user route
     Route::get('/edit_user/{id}', [RegisterController::class, 'Edit_user'])->name('edit_user');
 
-    Route::get('/update_user/{id}', [RegisterController::class, 'Update_User'])->name('update_user');
+    Route::post('/update_user/{id}', [RegisterController::class, 'Update_User'])->name('update_user');
 
 });
 
