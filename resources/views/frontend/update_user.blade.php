@@ -53,14 +53,14 @@
                     <form class="form account__form" autocomplete="off" action="{{route('addUser')}}" method="POST">
                         @csrf
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control form--control" placeholder="Username" value="{{ old('name') }}">
+                            <input type="text" name="name" class="form-control form--control" placeholder="Username" value="{{ $user->name }}">
                             @error('name')
                             <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
 
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control form--control" placeholder="Email" value="{{ old('email') }}">
+                            <input type="email" name="email" class="form-control form--control" placeholder="Email" value="{{ $user->email }}">
                             @error('email')
                             <span class="text-danger">{{ $message }}</span>
                             @enderror
@@ -80,8 +80,9 @@
                             @enderror
                         </div>
 
-                        <p>*Image: </p>
-                        <img src="" alt="">
+                        <img src="../assets/images/profile/{{ $user->image }}" alt="{{ $user->name }} image" style="height:120px; width:120px; object-fit:cover; border-radius:100%;">
+
+                        <p style="margin-bottom:11px;">*Image: {{ $user->image }}</p>
 
                         <div class="form-group">
                             <input type="file" name="image" class="form-control form--control">
@@ -93,8 +94,6 @@
 
                         <button class="btn cmn--btn mt-4" name="adduser">Update</button>
                     </form>
-
-                    <p class="mt-4">Already you have an account in here? <a class="ms-2 text--base" href="{{route('show')}}">Sign In</a></p>
                 </div>
             </div>
         </div>
