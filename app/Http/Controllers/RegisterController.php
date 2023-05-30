@@ -77,8 +77,11 @@ class RegisterController extends Controller
         $request->validate([
             'name' => 'required|string',
             'email' => 'required|string',
-            // 'password' => 'required|string|min:8',
-            // 'confirm_password' => 'required_with:password|same:password|min:8|string'
+            'phone_number' => 'required|string',
+            'country' => 'required|string',
+            'state' => 'required|string',
+            'city' => 'required|string',
+            'address' => 'required|string',
         ]);
 
         $datas = User::findOrFail($id);
@@ -91,6 +94,11 @@ class RegisterController extends Controller
         } else {
             $datas->name = $request->name;
             $datas->email = $request->email;
+            $datas->phone_number = $request->phone_number;
+            $datas->country = $request->country;
+            $datas->state = $request->state;
+            $datas->city = $request->city;
+            $datas->address = $request->address;
 
             if ($request->image) {
                 $imageName = time() . '_' . $request->image->getClientOriginalName();

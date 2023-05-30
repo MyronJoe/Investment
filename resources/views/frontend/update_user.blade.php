@@ -21,7 +21,7 @@
     <title>TENDIX-FX</title>
 
     <style>
-        .form-control{
+        .form-control {
             background: #fff !important;
             border: none !important;
             border-radius: 4px !important;
@@ -66,19 +66,44 @@
                             @enderror
                         </div>
 
-                        <!-- <div class="form-group">
-                            <input type="password" name="password" class="form-control form--control" placeholder="Password" value="{{ old('password') }}">
-                            @error('password')
-                            <span class="text-danger">{{ $message }}</span>
-                            @enderror
-                        </div> -->
+                        <!-- /ADDED/ -->
 
-                        <!-- <div class="form-group">
-                            <input type="password" name="confirm_password" class="form-control form--control" placeholder="Re-Password" value="{{ old('confirm_password') }}">
-                            @error('confirm_password')
+                        <div class="form-group">
+                            <input type="text" name="phone_number" class="form-control form--control" placeholder="Mobile Number" value="{{ $user->phone_number }}">
+                            @error('phone_number')
                             <span class="text-danger">{{ $message }}</span>
                             @enderror
-                        </div> -->
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="country" class="form-control form--control" placeholder="Country" value="{{ $user->country }}">
+                            @error('country')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="state" class="form-control form--control" placeholder="State" value="{{ $user->state }}">
+                            @error('state')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="city" class="form-control form--control" placeholder="City" value="{{ $user->city }}">
+                            @error('city')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="address" class="form-control form--control" placeholder="Address" value="{{ $user->address }}">
+                            @error('address')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <!-- /ADDED/ -->
 
                         <img src="../assets/images/profile/{{ $user->image }}" alt="{{ $user->name }} image" style="height:120px; width:120px; object-fit:cover; border-radius:100%;">
 
