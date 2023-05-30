@@ -50,7 +50,7 @@
             <div class="col-lg-6 col-xl-5">
                 <div class="account__form__wrapper">
                     <h3 class="title">Change Password</h3>
-                    <form class="form account__form" autocomplete="off" action="{{route('update_user', $user->id)}}" method="POST" enctype="multipart/form-data">
+                    <form class="form account__form" autocomplete="off" action="{{route('update_pass', $user->id)}}" method="POST" enctype="multipart/form-data">
                         @csrf
                        
 

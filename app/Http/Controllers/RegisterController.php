@@ -100,7 +100,7 @@ class RegisterController extends Controller
     }
 
     //Update user password to DB
-    public function Update_Pass($id)
+    public function change_password($id)
     {
         $user = User::findOrFail($id);
 
