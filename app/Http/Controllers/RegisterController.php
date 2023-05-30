@@ -43,8 +43,6 @@ class RegisterController extends Controller
             $data->password = Hash::make($request->password);
             $data->image = 'default.png';
 
-            // auth()->login($data);
-
             $data->save();
 
             // Alert::success('Admin Created Successfully');
@@ -91,9 +89,6 @@ class RegisterController extends Controller
             }
 
             $datas->save();
-
-            // $credentials = $request->only('email', 'password');
-            // Auth::guard('guest')->attempt($credentials);
 
             return redirect()->route('user_dashboard');
         }
