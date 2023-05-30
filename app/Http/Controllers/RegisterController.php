@@ -45,6 +45,11 @@ class RegisterController extends Controller
 
             $data->name = $request->name;
             $data->email = $request->email;
+            $data->phone_number = $request->phone_number;
+            $data->country = $request->country;
+            $data->state = $request->state;
+            $data->city = $request->city;
+            $data->address = $request->address;
             $data->password = Hash::make($request->password);
             $data->image = 'default.png';
 
