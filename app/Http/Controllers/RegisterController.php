@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -108,6 +109,7 @@ class RegisterController extends Controller
 
             $datas->save();
 
+            Alert::success('User deatils updated successfully');
             return redirect()->route('user_dashboard');
         }
     }

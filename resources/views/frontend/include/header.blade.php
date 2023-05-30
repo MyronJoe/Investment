@@ -103,3 +103,5 @@
     </div>
 </div>
 <!-- Search Form Ends Here -->
+
+@include('sweetalert::alert')
