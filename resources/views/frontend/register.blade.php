@@ -36,6 +36,46 @@
                             @enderror
                         </div>
 
+
+                        <!-- /ADDED/ -->
+
+                        <div class="form-group">
+                            <input type="text" name="phone_number" class="form-control form--control" placeholder="Mobile Number" value="{{ old('phone_number') }}">
+                            @error('phone_number')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="country" class="form-control form--control" placeholder="Country" value="{{ old('country') }}">
+                            @error('country')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="state" class="form-control form--control" placeholder="State" value="{{ old('state') }}">
+                            @error('state')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="city" class="form-control form--control" placeholder="City" value="{{ old('city') }}">
+                            @error('city')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="address" class="form-control form--control" placeholder="Address" value="{{ old('address') }}">
+                            @error('address')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <!-- /ADDED/ -->
+
                         <div class="form-group">
                             <input type="password" name="password" class="form-control form--control" placeholder="Password" value="{{ old('password') }}">
                             @error('password')
