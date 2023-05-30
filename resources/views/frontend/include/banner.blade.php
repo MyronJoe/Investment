@@ -2,7 +2,7 @@
     <div class="container">
         <div class="banner__wrapper d-flex align-items-center justify-content-between">
             <div class="banner__content">
-                <h1 class="title">Best Hyip Investment Platform</h1>
+                <h1 class="title">Best Investment Platform</h1>
                 <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero hyip investment pandding</p>
                 <a href="sign-in.html" class="cmn--btn">Get Started</a>
             </div>

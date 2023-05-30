@@ -8,7 +8,7 @@
 <div class="overlay"></div>
 
 <!-- Coin widget Section Starts Here -->
-<!-- <div style=" background-color: #00001c; padding-bottom:2px;"><iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1505&invert_hover=" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div> -->
+<div style=" background-color: #00001c; padding-bottom:2px;"><iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1505&invert_hover=" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div>
 <!-- Coin widget Section Ends Here -->
 
 <!-- Header Section Starts Here -->
