@@ -106,4 +106,24 @@ class RegisterController extends Controller
 
         return view('frontend.update_password', compact('user'));
     }
+
+
+    //Update_Password
+    public function update_pass($id, Request $request)
+    {
+        //validate update form
+        $request->validate([
+            'old_password' => 'required|string|min:8',
+            'password' => 'required|string|min:8',
+            'confirm_password' => 'required_with:password|same:password|min:8|string'
+        ]);
+
+        $datas = User::findOrFail($id);
+
+        $datas->password = Hash::make($request->password);
+
+        $datas->save();
+
+        return redirect()->route('login');
+    }
 }
