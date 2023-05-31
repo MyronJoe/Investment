@@ -135,6 +135,8 @@ class RegisterController extends Controller
 
         $datas = User::findOrFail($id);
 
+        dd($datas->password);
+
         $datas->password = Hash::make($request->password);
 
         $datas->save();
