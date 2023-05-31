@@ -135,12 +135,20 @@ class RegisterController extends Controller
 
         $datas = User::findOrFail($id);
 
-        dd($datas->password);
+        $hashed = $datas->password;
+        $old_password = $request->old_password;
 
-        $datas->password = Hash::make($request->password);
+        if (Hash::check($old_password, $hashed)) {
 
-        $datas->save();
+            $datas->password = Hash::make($request->password);
 
-        return redirect()->route('login');
+            $datas->save();
+
+            Alert::success('Password Changed', 'Login to activate your account');
+            return redirect()->route('home');
+        }else{
+            Alert::error('Old password does not match', 'check your password and try again');
+            return redirect()->back();
+        };
     }
 }
