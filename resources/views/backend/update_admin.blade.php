@@ -44,35 +44,88 @@
                 <!-- topbar -->
                 @include('backend.includes.header')
                 <!-- end topbar -->
+                <br>
 
-                <div class="full_container">
+                <div class="full_container" style="height: auto; padding:2em 0; overflow:hidden;">
                     <div class="container">
                         <div class="center verticle_center full_height">
                             <div class="login_section">
                                 <div class="logo_login">
                                     <div class="center">
-                                        <h3 class="text-light">dfjhdj</h3>
+                                        <h3 class="text-light">Update User</h3>
                                     </div>
                                 </div>
                                 <div class="login_form">
-                                    <form>
+                                    <form autocomplete="off" action="{{route('update_user', $user->id)}}" method="POST" enctype="multipart/form-data">
+                                        @csrf
                                         <fieldset>
                                             <div class="field">
+                                                <label class="label_field">User Name</label>
+                                                <input type="text" name="name" placeholder="User Name" value="{{ $user->name }}" />
+                                                @error('name')
+                                                <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+
+                                            <div class="field">
                                                 <label class="label_field">Email Address</label>
-                                                <input type="email" name="email" placeholder="E-mail" />
+                                                <input type="email" name="email" placeholder="Email Address" value="{{ $user->email }}" />
+                                                @error('email')
+                                                <span class="text-danger">{{ $message }}</span>
+                                                @enderror
                                             </div>
+
                                             <div class="field">
-                                                <label class="label_field">Password</label>
-                                                <input type="password" name="password" placeholder="Password" />
+                                                <label class="label_field">Phone Number</label>
+                                                <input type="text" name="phone_number" placeholder="Phone Number" value="{{ $user->phone_number }}" />
+                                                @error('phone_number')
+                                                <span class="text-danger">{{ $message }}</span>
+                                                @enderror
                                             </div>
+
                                             <div class="field">
+                                                <label class="label_field">Country</label>
+                                                <input type="text" name="country" placeholder="Country" value="{{ $user->country }}" />
+                                                @error('country')
+                                                <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+
+                                            <div class="field">
+                                                <label class="label_field">State</label>
+                                                <input type="text" name="state" placeholder="State" value="{{ $user->state }}" />
+                                                @error('state')
+                                                <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+
+                                            <div class="field">
+                                                <label class="label_field">City</label>
+                                                <input type="text" name="city" placeholder="City" value="{{ $user->city }}" />
+                                                @error('city')
+                                                <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+
+                                            <div class="field">
+                                                <label class="label_field">Address</label>
+                                                <input type="text" name="address" placeholder="Address" value="{{ $user->address }}" />
+                                                @error('address')
+                                                <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+
+
+
+                                            <!-- <div class="field">
                                                 <label class="label_field hidden">hidden label</label>
-                                                <label class="form-check-label"><input type="checkbox" class="form-check-input"> Remember Me</label>
+                                                <label class="form-check-label"><input type="checkbox" name="user_type" class="form-check-input">Make Admin</label>
                                                 <a class="forgot" href="">Forgotten Password?</a>
-                                            </div>
+                                            </div> -->
+
                                             <div class="field margin_0">
                                                 <label class="label_field hidden">hidden label</label>
-                                                <button class="main_bt">Sing In</button>
+                                                <button class="main_bt">Update</button>
                                             </div>
                                         </fieldset>
                                     </form>

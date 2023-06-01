@@ -75,7 +75,6 @@ class RegisterController extends Controller
 
             return view('frontend.update_user', compact('user'));
         }
-
     }
 
     //Update_User
@@ -116,8 +115,17 @@ class RegisterController extends Controller
 
             $datas->save();
 
-            Alert::success('User deatils updated successfully');
-            return redirect()->route('user_dashboard');
+
+
+            if ($datas->user_type === '2ru') {
+
+                Alert::success('Admin deatils updated successfully');
+                return redirect()->route('admin_profile');
+            } else {
+
+                Alert::success('User deatils updated successfully');
+                return redirect()->route('user_dashboard');
+            }
         }
     }
 
@@ -153,7 +161,7 @@ class RegisterController extends Controller
 
             Alert::success('Password Changed', 'Login to activate your account');
             return redirect()->route('home');
-        }else{
+        } else {
             Alert::error('Old password does not match', 'check your password and try again');
             return redirect()->back();
         };
