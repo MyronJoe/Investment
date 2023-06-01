@@ -68,7 +68,7 @@
                                         <fieldset>
                                             <div class="field">
                                                 <label class="label_field">Old Password</label>
-                                                <input type="text" name="old_password" placeholder="Old Password"/>
+                                                <input type="password" name="old_password" placeholder="Old Password"/>
                                                 @error('old_password')
                                                 <span class="text-danger">{{ $message }}</span>
                                                 @enderror
@@ -76,7 +76,7 @@
 
                                             <div class="field">
                                                 <label class="label_field">New Password</label>
-                                                <input type="email" name="password" placeholder="New Password"/>
+                                                <input type="password" name="password" placeholder="New Password"/>
                                                 @error('password')
                                                 <span class="text-danger">{{ $message }}</span>
                                                 @enderror
@@ -84,7 +84,7 @@
 
                                             <div class="field">
                                                 <label class="label_field">Conf-Password</label>
-                                                <input type="text" name="confirm_password" placeholder="Confirm Password" />
+                                                <input type="password" name="confirm_password" placeholder="Confirm Password" />
                                                 @error('confirm_password')
                                                 <span class="text-danger">{{ $message }}</span>
                                                 @enderror
