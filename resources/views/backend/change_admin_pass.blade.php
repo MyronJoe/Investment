@@ -63,29 +63,29 @@
                                     </div>
                                 </div>
                                 <div class="login_form">
-                                    <form autocomplete="off" action="{{route('update_user', $user->id)}}" method="POST" enctype="multipart/form-data">
+                                    <form autocomplete="off" action="{{route('update_pass', $user->id)}}" method="POST" enctype="multipart/form-data">
                                         @csrf
                                         <fieldset>
                                             <div class="field">
                                                 <label class="label_field">Old Password</label>
-                                                <input type="text" name="name" placeholder="User Name" value="{{ $user->name }}" />
-                                                @error('name')
+                                                <input type="text" name="old_password" placeholder="User Name" value="{{ $user->name }}" />
+                                                @error('old_password')
                                                 <span class="text-danger">{{ $message }}</span>
                                                 @enderror
                                             </div>
 
                                             <div class="field">
                                                 <label class="label_field">New Password</label>
-                                                <input type="email" name="email" placeholder="Email Address" value="{{ $user->email }}" />
-                                                @error('email')
+                                                <input type="email" name="password" placeholder="Email Address" value="{{ $user->email }}" />
+                                                @error('password')
                                                 <span class="text-danger">{{ $message }}</span>
                                                 @enderror
                                             </div>
 
                                             <div class="field">
                                                 <label class="label_field">Confirm Password</label>
-                                                <input type="text" name="phone_number" placeholder="Phone Number" value="{{ $user->phone_number }}" />
-                                                @error('phone_number')
+                                                <input type="text" name="confirm_password" placeholder="Phone Number" value="{{ $user->phone_number }}" />
+                                                @error('confirm_password')
                                                 <span class="text-danger">{{ $message }}</span>
                                                 @enderror
                                             </div>
@@ -100,7 +100,7 @@
 
                                             <div class="field margin_0">
                                                 <label class="label_field hidden">hidden label</label>
-                                                <button class="main_bt">Update</button>
+                                                <button class="main_bt">Change Password</button>
                                             </div>
                                         </fieldset>
                                     </form>
