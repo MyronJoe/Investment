@@ -68,7 +68,14 @@ class RegisterController extends Controller
     {
         $user = User::findOrFail($id);
 
-        return view('frontend.update_user', compact('user'));
+        if ($user->user_type === '2ru') {
+
+            return view('backend.update_admin', compact('user'));
+        } else {
+
+            return view('frontend.update_user', compact('user'));
+        }
+
     }
 
     //Update_User
