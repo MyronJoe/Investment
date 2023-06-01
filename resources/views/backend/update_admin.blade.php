@@ -30,6 +30,13 @@
     <!-- custom css -->
     <link rel="stylesheet" href="../backend/css/custom.css" />
 
+    <style>
+        .login_form form .field {
+            display: block;
+            margin: 0 0 2px !important;
+        }
+    </style>
+
 </head>
 
 <body class="dashboard dashboard_1">
@@ -114,6 +121,15 @@
                                                 <span class="text-danger">{{ $message }}</span>
                                                 @enderror
                                             </div>
+
+                                            <img src="../assets/images/profile/{{ $user->image }}" alt="{{ $user->name }} image" style="height:120px; width:120px; object-fit:cover; border-radius:100%;">
+
+                                            <p style="margin-bottom:11px;">*Image: {{ $user->image }}</p>
+
+                                            <div class="form-group">
+                                                <input type="file" name="image" class="form-control form--control">
+                                            </div>
+
 
 
 
