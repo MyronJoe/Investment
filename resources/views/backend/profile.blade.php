@@ -28,8 +28,12 @@
                             <div class="col-md-8">
                                 <div class="white_shd full margin_bottom_30">
                                     <div class="full graph_head">
-                                        <div class="heading1 margin_0">
-                                            <h2>User profile</h2>
+                                        <div class="heading1 margin_0 d-md-flex justify-content-between" style="width:100%;">
+                                            <h2 class="d-block mt-2">User profile</h2>
+
+                                            <a href="" class="btn btn-primary d-block mt-2">Update Details</a>
+
+                                            <a href="" class="btn btn-primary d-block mt-2">Change Password</a>
                                         </div>
                                     </div>
                                     <div class="full price_table padding_infor_info">
@@ -45,7 +49,7 @@
                                                             <p><strong><i class="fa fa-envelope-o"></i> : </strong>{{ Auth::user()->email }}</p>
                                                             <ul class="list-unstyled">
 
-                                                                <li><i class="fa fa-phone"></i> : 987 654 3210</li>
+                                                                <li><i class="fa fa-phone"></i>{{ Auth::user()->phone_number }}</li>
                                                             </ul>
                                                         </div>
                                                     </div>
