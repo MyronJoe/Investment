@@ -99,7 +99,6 @@
                                             </div> -->
 
                                             <div class="field margin_0">
-                                                <label class="label_field hidden">hidden label</label>
                                                 <button class="main_bt">Change Password</button>
                                             </div>
                                         </fieldset>

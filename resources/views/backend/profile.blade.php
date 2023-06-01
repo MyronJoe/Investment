@@ -45,12 +45,14 @@
                                                     <div class="profile_img"><img width="180" class="rounded-circle" src="assets/images/profile/{{ Auth::user()->image }}" alt="#" style="height:140px; width:140px; object-fit:cover; border-radius:100%;"/></div>
                                                     <div class="profile_contant">
                                                         <div class="contact_inner">
-                                                            <h3>{{ Auth::user()->name }}</h3>
-                                                            <p><strong><i class="fa fa-envelope-o"></i> : </strong>{{ Auth::user()->email }}</p>
-                                                            <ul class="list-unstyled">
-
-                                                                <li><i class="fa fa-phone"></i>{{ Auth::user()->phone_number }}</li>
-                                                            </ul>
+                                                            <h3>User Name: {{ Auth::user()->name }}</h3>
+                                                            <strong>Email Addres: <span class="text-dark">{{ Auth::user()->email }}</span></strong><br>
+                                                            <strong>Phone Number: <span class="text-dark">{{ Auth::user()->phone_number}}</span></strong><br>
+                                                            <strong>Country: <span class="text-dark">{{ Auth::user()->country }}</span></strong><br>
+                                                            <strong>State: <span class="text-dark">{{ Auth::user()->state }}</span></strong><br>
+                                                            <strong>City: <span class="text-dark">{{ Auth::user()->city }}</span></strong>
+                                                            <br>
+                                                            <strong>Addres: <span class="text-dark">{{ Auth::user()->address }}</span></strong><br>
                                                         </div>
                                                     </div>
                                                 </div>
