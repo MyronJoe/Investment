@@ -59,7 +59,7 @@
                             <div class="login_section">
                                 <div class="logo_login">
                                     <div class="center">
-                                        <h3 class="text-light">Update User</h3>
+                                        <h3 class="text-light">Change Password</h3>
                                     </div>
                                 </div>
                                 <div class="login_form">
@@ -68,7 +68,7 @@
                                         <fieldset>
                                             <div class="field">
                                                 <label class="label_field">Old Password</label>
-                                                <input type="text" name="old_password" placeholder="User Name" value="{{ $user->name }}" />
+                                                <input type="text" name="old_password" placeholder="Old Password"/>
                                                 @error('old_password')
                                                 <span class="text-danger">{{ $message }}</span>
                                                 @enderror
@@ -76,15 +76,15 @@
 
                                             <div class="field">
                                                 <label class="label_field">New Password</label>
-                                                <input type="email" name="password" placeholder="Email Address" value="{{ $user->email }}" />
+                                                <input type="email" name="password" placeholder="New Password"/>
                                                 @error('password')
                                                 <span class="text-danger">{{ $message }}</span>
                                                 @enderror
                                             </div>
 
                                             <div class="field">
-                                                <label class="label_field">Confirm Password</label>
-                                                <input type="text" name="confirm_password" placeholder="Phone Number" value="{{ $user->phone_number }}" />
+                                                <label class="label_field">Conf-Password</label>
+                                                <input type="text" name="confirm_password" placeholder="Confirm Password" />
                                                 @error('confirm_password')
                                                 <span class="text-danger">{{ $message }}</span>
                                                 @enderror

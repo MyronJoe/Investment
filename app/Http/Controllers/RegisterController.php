@@ -134,7 +134,13 @@ class RegisterController extends Controller
     {
         $user = User::findOrFail($id);
 
-        return view('frontend.update_password', compact('user'));
+        if ($user->user_type === '2ru') {
+
+            return view('backend.change_admin_pass', compact('user'));
+        } else {
+
+            return view('frontend.update_password', compact('user'));
+        }
     }
 
 

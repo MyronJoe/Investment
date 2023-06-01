@@ -33,7 +33,7 @@
 
                                             <a href="{{route('edit_user', Auth::user()->id)}}" class="btn btn-primary d-block mt-2">Update Details</a>
 
-                                            <a href="" class="btn btn-primary d-block mt-2">Change Password</a>
+                                            <a href="{{route('change_password', Auth::user()->id)}}" class="btn btn-primary d-block mt-2">Change Password</a>
                                         </div>
                                     </div>
                                     <div class="full price_table padding_infor_info">
