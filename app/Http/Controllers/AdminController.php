@@ -18,8 +18,8 @@ class AdminController extends Controller
     {
         $admin_users = User::where('user_type', '=', '2ru')->get();
 
-        dd($admin_users);
+        // dd($admin_users);
 
-        return view('backend.Admin_users');
+        return view('backend.admin_users', compact('admin_users'));
     }
 }
