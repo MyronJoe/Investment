@@ -46,13 +46,19 @@
                                                     <div class="profile_contant">
                                                         <div class="contact_inner">
                                                             <h3>User Name: {{ Auth::user()->name }}</h3>
-                                                            <strong>Email Addres: <span class="text-dark">{{ Auth::user()->email }}</span></strong><br>
-                                                            <strong>Phone Number: <span class="text-dark">{{ Auth::user()->phone_number}}</span></strong><br>
-                                                            <strong>Country: <span class="text-dark">{{ Auth::user()->country }}</span></strong><br>
-                                                            <strong>State: <span class="text-dark">{{ Auth::user()->state }}</span></strong><br>
+                                                            
+                                                            <strong>Email Addres: <span class="text-dark">{{ Auth::user()->email }}</span></strong><br><br>
+
+                                                            <strong>Phone Number: <span class="text-dark">{{ Auth::user()->phone_number}}</span></strong><br><br>
+
+                                                            <strong>Country: <span class="text-dark">{{ Auth::user()->country }}</span></strong><br><br>
+
+                                                            <strong>State: <span class="text-dark">{{ Auth::user()->state }}</span></strong><br><br>
+
                                                             <strong>City: <span class="text-dark">{{ Auth::user()->city }}</span></strong>
-                                                            <br>
-                                                            <strong>Addres: <span class="text-dark">{{ Auth::user()->address }}</span></strong><br>
+                                                            <br><br>
+
+                                                            <strong>Addres: <span class="text-dark">{{ Auth::user()->address }}</span></strong><br><br>
                                                         </div>
                                                     </div>
                                                 </div>
