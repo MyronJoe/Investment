@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class RegisterController extends Controller
 {
@@ -38,7 +38,7 @@ class RegisterController extends Controller
         $email =  User::where('email', $request->email)->exists();
 
         if ($email) {
-            // Alert::error('Email Already Exist');
+            Alert::error('Email Already Exist');
             return redirect()->back();
         } else {
 
