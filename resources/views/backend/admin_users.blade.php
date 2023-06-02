@@ -6,7 +6,7 @@
             <!-- Sidebar  -->
             @include('backend.includes.sidebar')
             <!-- end sidebar -->
-            
+
             <!-- right content -->
             <div id="content">
                 <!-- topbar -->
@@ -23,7 +23,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
 
                         <!-- table section -->
                         <div class="col-md-12">
@@ -43,11 +43,11 @@
                                                     <th>Email</th>
                                                     <th>Phone Number</th>
                                                     <th>Action</th>
-                                                    
+
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                            @foreach($admin_users as $key => $data)
+                                                @foreach($admin_users as $key => $data)
                                                 <tr>
                                                     <td>{{$key + 1}}</td>
                                                     <td>{{$data->name}}</td>
@@ -57,7 +57,7 @@
                                                         <a href="{{route('delete_admin', $data->id)}}" class="btn btn-danger btn-md" onclick="confirmation(event)">Delete</a>
                                                     </td>
                                                 </tr>
-                                            @endforeach
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>
@@ -65,14 +65,44 @@
                             </div>
                         </div>
 
-
-
                     </div>
                 </div>
                 <!-- end dashboard inner -->
             </div>
         </div>
     </div>
+
+    <script>
+        function confirmation(e) {
+            e.preventDefault();
+            var link = e.currentTarget.getAttribute('href');
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "To Deleted This Data!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                cancelButtonText: 'No',
+                confirmButtonText: 'Yes, Delete!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        'Deleted!',
+                        'Data Deleted Successfully.',
+                        'success'
+                    )
+                    window.location.href = link
+                }
+            });
+
+        }
+    </script>
+
+    <script src="backend/js/sweetalert2.all.min.js"></script>
+
+
+
     <!-- jQuery -->
     <script src="backend/js/jquery.min.js"></script>
     <script src="backend/js/popper.min.js"></script>

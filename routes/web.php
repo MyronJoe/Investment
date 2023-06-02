@@ -71,4 +71,4 @@ Route::get('/create_admin', [AdminController::class, 'create_admin'])->name('cre
 
 Route::post('/make_admin', [AdminController::class, 'Make_admin'])->name('make_admin');
 
-Route::post('/delete_admin/{id}', [AdminController::class, 'delete_admin'])->name('delete_admin');
+Route::get('/delete_admin/{id}', [AdminController::class, 'delete_admin'])->name('delete_admin');
