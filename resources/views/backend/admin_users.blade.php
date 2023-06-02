@@ -54,9 +54,8 @@
                                                     <td>{{$data->email}}</td>
                                                     <td>{{$data->phone_number}}</td>
                                                     <td>
-                                                        <a href="" class="btn btn-danger btn-md">Delete</a>
+                                                        <a href="{{route('create_admin')}}" class="btn btn-danger btn-md">Delete</a>
                                                     </td>
-
                                                 </tr>
                                             @endforeach
                                             </tbody>

@@ -66,3 +66,5 @@ Route::get('/contact', [HomeController::class, 'Contact'])->name('contact');
 Route::get('/profile', [AdminController::class, 'Profile'])->name('admin_profile');
 
 Route::get('/admin_users', [AdminController::class, 'Admin_users'])->name('admin_users');
+
+Route::get('/create_admin', [AdminController::class, 'create_admin'])->name('create_admin');
