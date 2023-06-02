@@ -101,8 +101,6 @@
 
     <script src="backend/js/sweetalert2.all.min.js"></script>
 
-
-
     <!-- jQuery -->
     <script src="backend/js/jquery.min.js"></script>
     <script src="backend/js/popper.min.js"></script>
