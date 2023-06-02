@@ -30,7 +30,7 @@
                             <div class="white_shd full margin_bottom_30">
                                 <div class="full graph_head">
                                     <div class="heading1 margin_0">
-                                        <a href="" class="btn btn-primary btn-md">Create New Admin</a>
+                                        <a href="{{route('create_admin')}}" class="btn btn-primary btn-md">Create New Admin</a>
                                     </div>
                                 </div>
                                 <div class="table_section padding_infor_info">

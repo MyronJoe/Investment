@@ -20,4 +20,12 @@ class AdminController extends Controller
 
         return view('backend.admin_users', compact('admin_users'));
     }
+
+    //create_admin
+    public function create_admin()
+    {
+        return view('backend.create_admin');
+    }
+
+
 }
