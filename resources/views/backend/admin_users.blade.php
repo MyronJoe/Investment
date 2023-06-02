@@ -54,7 +54,7 @@
                                                     <td>{{$data->email}}</td>
                                                     <td>{{$data->phone_number}}</td>
                                                     <td>
-                                                        <a href="{{route('delete_admin', $data->id)}}" class="btn btn-danger btn-md">Delete</a>
+                                                        <a href="{{route('delete_admin', $data->id)}}" class="btn btn-danger btn-md" onclick="confirmation(event)">Delete</a>
                                                     </td>
                                                 </tr>
                                             @endforeach
