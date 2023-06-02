@@ -27,7 +27,8 @@
             <li>
                 <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-diamond purple_color"></i> <span>Users</span></a>
                 <ul class="collapse list-unstyled" id="element">
-                    <li><a href="general_elements.html">> <span>Admins</span></a></li>
+                    <li><a href="{{route('admin_users')}}">> <span>Admins</span></a></li>
+                    
                     <li><a href="{{route('admin_profile')}}">> <span>Profile</span></a></li>
                 </ul>
             </li>

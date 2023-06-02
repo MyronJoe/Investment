@@ -64,3 +64,5 @@ Route::get('/contact', [HomeController::class, 'Contact'])->name('contact');
 //will need an admin middleware
 //admin routes
 Route::get('/profile', [AdminController::class, 'Profile'])->name('admin_profile');
+
+Route::get('/admin_users', [AdminController::class, 'Admin_users'])->name('admin_users');

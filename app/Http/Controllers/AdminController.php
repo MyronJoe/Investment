@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -10,5 +11,15 @@ class AdminController extends Controller
     public function Profile()
     {
         return view('backend.profile');
+    }
+
+    //Admin_users page
+    public function Admin_users()
+    {
+        $admin_users = User::where('user_type', '=', '2ru')->get();
+
+        dd($admin_users);
+
+        return view('backend.Admin_users');
     }
 }
